@@ -12,13 +12,17 @@ size: 20px;
 <body>
 <div id="title" onclick="aaaleat()">
 <h1>テストページ</h1></div>
-<input type="text"><br>
-<input type="submit">
-
-
+<input type="text" id="textbox">
+<button oncliclick="moji">
+<br><p id="msg"></p>
 <script>
  function aaaleat() {
 alert('test');
+}
+function moji() {
+    const text = document.getElementById("textbox");
+    const text2 = text.value
+    msg.innerText = text2;
 }
 </script>
 </body>
