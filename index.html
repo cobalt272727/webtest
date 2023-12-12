@@ -12,13 +12,19 @@ width: 50px;
 height: 30px;
 background-color: aquamarine;
 }
+#msg {
+    font-size: large;
+    color: blueviolet;
+}
 </style>
 </head>
 <body>
 <div id="title" onclick="aaaleat()">
 <h1>テストページ</h1></div>
 <input type="text" id="textbox">
-<div id="button" onclick="moji()"></div>
+<div id="button" onclick="moji()">
+<p>表示</p>
+</div>
 <br><p id="msg"></p>
 <script>
  function aaaleat() {
@@ -29,7 +35,6 @@ function moji() {
     const text2 = text.value
     msg.innerText = text2;
     
-    alert('test');
 }
 </script>
 </body>
