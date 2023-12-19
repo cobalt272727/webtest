@@ -41,7 +41,6 @@ display: flex;
 <input type="text" id="textbox">
 <div id="button" onclick="moji()">
 <p>表示</p>
-<p>Motomura's brain is poop.</p>
 </div>
 <br><p id="msg"></p>
 
@@ -52,7 +51,7 @@ alert('test');
 function moji() {
     var text = document.getElementById("textbox");
     var text2 = text.value;
-    msg.innerText = text2;
+    msg.innerText = "本村は" + text2;
     
 }
 </script>
